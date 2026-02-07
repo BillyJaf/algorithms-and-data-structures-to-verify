@@ -82,7 +82,7 @@ fn compare_large_sort() {
     println!("Large sequential sort took: {:?}", elapsed);
 
     let start = Instant::now();
-    merge_sort_concurrent(&mut arr_shuffled_two, 16);
+    merge_sort_concurrent(&mut arr_shuffled_two, 8);
     let elapsed = start.elapsed();
 
     println!("Large concurrent sort took: {:?}", elapsed);
