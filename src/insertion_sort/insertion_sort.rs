@@ -1,4 +1,4 @@
-pub fn insertion_sort(arr: &mut [i32]) {
+pub fn insertion_sort(arr: &mut Vec<i32>) {
     let num_elements = arr.len();
     
     // Do this check so that later we can cast to an i32 safely.
