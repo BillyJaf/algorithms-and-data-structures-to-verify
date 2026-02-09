@@ -7,7 +7,7 @@ pub fn insertion_sort(mut arr: Vec<i32>) -> Vec<i32> {
         return arr;
     }
 
-    let mut i = 0;
+    let mut i = 1;
 
     while i < num_elements {
         let current_element = arr[i];
