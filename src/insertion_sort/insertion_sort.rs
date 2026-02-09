@@ -7,14 +7,17 @@ pub fn insertion_sort(mut arr: Vec<i32>) -> Vec<i32> {
         return arr;
     }
 
-    for i in 1..num_elements {
+    let mut i = 0;
+
+    while i < num_elements {
         let current_element = arr[i];
-        let mut j = (i - 1) as i32;
+        let mut j = i as i32 - 1;
         while j >= 0  && arr[j as usize] > current_element {
-            arr[(j + 1) as usize] = arr[j as usize];
+            arr[j as usize + 1] = arr[j as usize];
             arr[j as usize] = current_element;
             j -= 1;
         }
+        i += 1;
     }
     return arr;
 }
