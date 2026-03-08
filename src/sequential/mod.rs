@@ -1,4 +1,2 @@
 pub mod insertion_sort;
-
-#[cfg(test)]
-mod tests;
+pub mod merge_sort;

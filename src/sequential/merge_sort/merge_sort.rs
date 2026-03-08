@@ -1,3 +1,5 @@
+#![allow(dead_code)]
+
 pub fn merge_sort_sequential<T>(arr: &mut [T])
     where T: Eq + PartialOrd + Copy
 {

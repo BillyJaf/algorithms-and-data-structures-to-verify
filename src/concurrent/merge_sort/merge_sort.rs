@@ -1,6 +1,7 @@
-use std::thread;
+#![allow(dead_code)]
 
-use super::merge_sort_sequential::merge_sort_sequential;
+use std::thread;
+use crate::sequential::merge_sort::merge_sort::merge_sort_sequential;
 
 pub fn merge_sort_concurrent(arr: &mut [i32], num_threads: usize) {
     let mut power_of_two = 1;

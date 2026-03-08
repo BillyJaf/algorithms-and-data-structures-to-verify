@@ -1,3 +1,5 @@
+#![allow(dead_code)]
+
 pub fn insertion_sort(arr: &mut [i32]) {
     let num_elements = arr.len();
     
